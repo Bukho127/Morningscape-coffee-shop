@@ -5,15 +5,21 @@
       <img src="@/assets/coffee_shop.jpg" alt="Landing" class="landing-image" />
     </div>
     <HeroSection/>
+    <FeaturedProducts/>
+    <FooterComponent/>
   </div>
 </template>
 
 <script>
 import HeroSection from '@/components/HeroSection.vue';
+import FeaturedProducts from '@/components/FeaturedProducts.vue';
+import FooterComponent from '../components/FooterComponent.vue';
 export default {
   name: 'LandingPage',
   components: {
-    HeroSection
+    HeroSection,
+    FeaturedProducts,
+    FooterComponent,
   }
 };
 </script>

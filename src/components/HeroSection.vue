@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .hero-section{
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .title{
     max-width: 50rem;
@@ -37,10 +37,40 @@ h1{
     margin-top: 3rem;
     max-width: 85rem;
     margin: 0 auto;
+    margin-bottom:5rem ;
+}
+.hero-button{
+    text-decoration: none;
+    background-color: #4b2e2e;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
 
 p{
     margin-top: 4rem;
     font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+    .hero-section{
+        margin-top: 4rem;
+    }
+    .title{
+       padding: 0 2rem;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .text-container{
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    
 }
 </style>

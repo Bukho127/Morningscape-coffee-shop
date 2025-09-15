@@ -15,23 +15,26 @@
       </div>
     </div>
   </div>
+  <FooterCompoment/>
 </template>
 
 <script>
 import axios from "axios";
+import FooterCompoment from "@/components/FooterComponent.vue";
 
 export default {
   name: "MenuPage",
+  components: { FooterCompoment },
   data() {
     return {
-      menu: [],       // Menu items from backend
-      cart: [],       // Array to store items added to cart
+      menu: [],       
+      cart: [],      
       loading: true,
     };
   },
   mounted() {
     axios
-      .get("http://localhost:3000/menu")
+      .get("http://localhost:3000/api/menu")
       .then((res) => {
         console.log("Backend response:", res.data);
         this.menu = res.data;
