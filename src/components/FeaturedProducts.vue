@@ -8,7 +8,7 @@
         :key="product.id"
         class="product-card"
         @click="goToDetails(product.id)"
-        style="cursor: pointer;"
+        style="cursor: pointer"
       >
         <img
           :src="`http://localhost:3000${product.image}`"
@@ -94,7 +94,7 @@ export default {
   background: #fff;
   border-radius: 1rem;
   padding: 1rem;
-  margin:4rem 0 8rem 0;
+  margin: 4rem 0 8rem 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   position: relative;
   transition: transform 0.2s ease;
@@ -166,8 +166,7 @@ export default {
 
 @media (max-width: 400px) {
   .products-grid {
-    grid-template-columns: repeat(1 , 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 </style>
-

@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .hero-section{
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 .title{
     max-width: 50rem;
@@ -31,6 +31,7 @@ h1{
     text-transform: uppercase;
     color: #4b2e2e;
     line-height: 1.5;
+    font-size: 2rem;
 }
 
 .text-container{
